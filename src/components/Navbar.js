@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
   return (
     <nav>
       <div className='container'>
@@ -17,6 +17,9 @@ const Navbar = () => {
           </li>
           <li>
             <a href='#'>Contact us</a>
+          </li>
+          <li>
+            <a href='#'>Cart<sup className='text-dark'>{cart?.length > 0 ? cart.length: 0}</sup></a>
           </li>
         </ul>
       </div>
