@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = ({cart}) => {
   return (
@@ -20,6 +21,9 @@ const Navbar = ({cart}) => {
           </li>
           <li>
             <a href='#'>Cart<sup className='text-dark'>{cart?.length > 0 ? cart.length: 0}</sup></a>
+          </li>
+          <li>
+            <Link to ='/login'>Login</Link>
           </li>
         </ul>
       </div>
