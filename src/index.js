@@ -8,6 +8,7 @@ import "./css/style.css";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import LoginForm from './components/LoginForm';
+import Registeration from './components/Registeration';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -16,6 +17,7 @@ root.render(
       <Routes path='/' element={<App />}>
         <Route index element={<HomePage />} />
         <Route path='/login' element={<LoginForm />} />
+        <Route path='/register' element={<Registeration />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

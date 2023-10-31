@@ -25,7 +25,6 @@ const HomePage = () => {
     <div>
       <Header cart = {cart} />
       <Products addToCart={addToCart} removeCartItem ={removeCartItem} />
-      <Outlet />
       {/* <ComponetLifeCycle /> */}
       {/* <LifeCylceUsingHooks /> */}
     </div>
